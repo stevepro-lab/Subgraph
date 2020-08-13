@@ -35,17 +35,6 @@ export function handleZapOut(call: ZapOutCall): void {
   entity.save()
 }
 
-export function handleZapOut2PairToken(call: ZapOut2PairTokenCall): void {
-  let id = call.transaction.hash.toHex()
-  let entity = new UniswapV2ZapOutGeneralV2ZapOut2PairToken(id)
-  entity._FromUniPoolAddress = call.inputs._FromUniPoolAddress
-  entity._IncomingLP = call.inputs._IncomingLP
-  entity.amountA = call.outputs.amountA
-  entity.amountB = call.outputs.amountB
-  entity.timestamp = call.block.timestamp
-  entity.save()
-}
-
 export function handleinCaseTokengetsStuck(
   call: InCaseTokengetsStuckCall
 ): void {

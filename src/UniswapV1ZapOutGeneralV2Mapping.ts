@@ -30,7 +30,7 @@ export function handleLetsWithdrawonlyERC(
   entity.LiquidityTokenSold = call.inputs.LiquidityTokenSold
   entity._minTokensRec = call.inputs._minTokensRec
   entity._returnInDai = call.inputs._returnInDai
-  entity.value0 = call.outputs.value0
+  //entity.value0 = call.outputs.value0
   entity.timestamp = call.block.timestamp
   entity.save()
 }

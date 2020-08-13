@@ -30,8 +30,6 @@ dataSources:
       callHandlers:
         - function: ZapOut(address,address,uint256,uint256)
           handler: handleZapOut
-        - function: ZapOut2PairToken(address,uint256)
-          handler: handleZapOut2PairToken
         - function: inCaseTokengetsStuck(address)
           handler: handleinCaseTokengetsStuck
         - function: renounceOwnership()
@@ -196,8 +194,6 @@ dataSources:
       callHandlers:
         - function: EasyZapOut(address,address,uint256,uint256)
           handler: handleEasyZapOut
-        - function: ZapOut(address,address,address,uint256,address,uint256)
-          handler: handleZapOut
         - function: inCaseTokengetsStuck(address)
           handler: handleinCaseTokengetsStuck
         - function: renounceOwnership()
@@ -376,8 +372,6 @@ dataSources:
           handler: handleZapIn
         - function: inCaseTokengetsStuck(address)
           handler: handleinCaseTokengetsStuck
-        - function: renounceOwnership()
-          handler: handlerenounceOwnership
         - function: set_new_dzgoodwillAddress(address)
           handler: handlesetnewdzgoodwillAddress
         - function: set_new_goodwill(uint16)

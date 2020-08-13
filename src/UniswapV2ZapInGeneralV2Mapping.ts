@@ -29,7 +29,7 @@ export function handleZapIn(call: ZapInCall): void {
   entity._ToUnipoolToken1 = call.inputs._ToUnipoolToken1
   entity._amount = call.inputs._amount
   entity._minPoolTokens = call.inputs._minPoolTokens
-  entity.value0 = call.outputs.value0
+  //entity.value0 = call.outputs.value0
   entity.timestamp = call.block.timestamp
   entity.save()
 }

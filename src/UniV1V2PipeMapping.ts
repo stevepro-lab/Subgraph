@@ -30,7 +30,7 @@ export function handleV1toV2Pipe(call: V1_to_V2_PipeCall): void {
   entity.uniV1Amount = call.inputs.uniV1Amount
   entity.toTokenAddress = call.inputs.toTokenAddress
   entity.toWhomToIssue = call.inputs.toWhomToIssue
-  entity.value0 = call.outputs.value0
+  //entity.value0 = call.outputs.value0
   entity.timestamp = call.block.timestamp
   entity.save()
 }

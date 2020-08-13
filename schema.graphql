@@ -5,7 +5,7 @@ type UniswapV2ZapOutGeneralV2ZapOut @entity {
   _FromUniPoolAddress: Bytes! # address
   _IncomingLP: BigInt! # uint256
   _minTokensRec: BigInt! # uint256
-  value0: BigInt! # uint256
+  value0: BigInt # uint256
 }
 
 type UniswapV2ZapOutGeneralV2ZapOut2PairToken @entity {
@@ -13,8 +13,8 @@ type UniswapV2ZapOutGeneralV2ZapOut2PairToken @entity {
   timestamp: BigInt! # uint256
   _FromUniPoolAddress: Bytes! # address
   _IncomingLP: BigInt! # uint256
-  amountA: BigInt! # uint256
-  amountB: BigInt! # uint256
+  amountA: BigInt # uint256
+  amountB: BigInt # uint256
 }
 
 type UniswapV2ZapOutGeneralV2inCaseTokengetsStuck @entity {
@@ -64,7 +64,7 @@ type CurveZapInGeneralV14ZapIn @entity {
   _curvePoolExchangeAddress: Bytes! # address
   _IncomingTokenQty: BigInt! # uint256
   _minPoolTokens: BigInt! # uint256
-  crvTokensBought: BigInt! # uint256
+  crvTokensBought: BigInt # uint256
 }
 
 type CurveZapInGeneralV14approveToken @entity {
@@ -103,7 +103,7 @@ type CurveZapInGeneralV14toggleContractActive @entity {
 type CurveZapInGeneralV14transferOwnership @entity {
   id: ID!
   timestamp: BigInt! # uint256
-  newOwner: Bytes! # address
+  newOwner: Bytes # address
 }
 
 type CurveZapInGeneralV14withdraw @entity {
@@ -120,7 +120,7 @@ type CurveGeneralZapOutV2ZapOut @entity {
   _IncomingCRV: BigInt! # uint256
   _ToTokenAddress: Bytes! # address
   _minToTokens: BigInt! # uint256
-  ToTokensBought: BigInt! # uint256
+  ToTokensBought: BigInt # uint256
 }
 
 type CurveGeneralZapOutV2ZapoutToUnderlying @entity {
@@ -138,7 +138,7 @@ type CurveGeneralZapOutV2token2Eth @entity {
   _FromTokenContractAddress: Bytes! # address
   tokens2Trade: BigInt! # uint256
   _toWhomToIssue: Bytes! # address
-  value0: BigInt! # uint256
+  value0: BigInt # uint256
 }
 
 type CurveGeneralZapOutV2token2Token @entity {
@@ -148,7 +148,7 @@ type CurveGeneralZapOutV2token2Token @entity {
   _ToWhomToIssue: Bytes! # address
   _ToTokenContractAddress: Bytes! # address
   tokens2Trade: BigInt! # uint256
-  tokenBought: BigInt! # uint256
+  tokenBought: BigInt # uint256
 }
 
 type CurveGeneralZapOutV2addCRVToken @entity {
@@ -229,7 +229,7 @@ type CurveGeneralZapOutV2toggleContractActive @entity {
 type CurveGeneralZapOutV2transferOwnership @entity {
   id: ID!
   timestamp: BigInt! # uint256
-  newOwner: Bytes! # address
+  newOwner: Bytes # address
 }
 
 type CurveGeneralZapOutV2withdraw @entity {
@@ -244,7 +244,7 @@ type BalancerZapOutGeneralV2EasyZapOut @entity {
   _FromBalancerPoolAddress: Bytes! # address
   _IncomingBPT: BigInt! # uint256
   _minTokensRec: BigInt! # uint256
-  value0: BigInt! # uint256
+  value0: BigInt # uint256
 }
 
 type BalancerZapOutGeneralV2ZapOut @entity {
@@ -256,7 +256,7 @@ type BalancerZapOutGeneralV2ZapOut @entity {
   _IncomingBPT: BigInt! # uint256
   _IntermediateToken: Bytes! # address
   _minTokensRec: BigInt! # uint256
-  value0: BigInt! # uint256
+  value0: BigInt # uint256
 }
 
 type BalancerZapOutGeneralV2inCaseTokengetsStuck @entity {
@@ -290,7 +290,7 @@ type BalancerZapOutGeneralV2toggleContractActive @entity {
 type BalancerZapOutGeneralV2transferOwnership @entity {
   id: ID!
   timestamp: BigInt! # uint256
-  newOwner: Bytes! # address
+  newOwner: Bytes # address
 }
 
 type BalancerZapOutGeneralV2withdraw @entity {
@@ -305,7 +305,7 @@ type UniswapV1ZapOutGeneralV2LetsWithdrawonlyERC @entity {
   LiquidityTokenSold: BigInt! # uint256
   _minTokensRec: BigInt! # uint256
   _returnInDai: Boolean! # bool
-  value0: Boolean! # bool
+  value0: Boolean # bool
 }
 
 type UniswapV1ZapOutGeneralV2LetsWithdrawonlyETH @entity {
@@ -314,7 +314,7 @@ type UniswapV1ZapOutGeneralV2LetsWithdrawonlyETH @entity {
   _TokenContractAddress: Bytes! # address
   LiquidityTokenSold: BigInt! # uint256
   _minEthRec: BigInt! # uint256
-  value0: Boolean! # bool
+  value0: Boolean # bool
 }
 
 type UniswapV1ZapOutGeneralV2inCaseTokengetsStuck @entity {
@@ -342,7 +342,7 @@ type UniswapV1ZapOutGeneralV2toggleContractActive @entity {
 type UniswapV1ZapOutGeneralV2transferOwnership @entity {
   id: ID!
   timestamp: BigInt! # uint256
-  newOwner: Bytes! # address
+  newOwner: Bytes # address
 }
 
 type UniswapV1ZapOutGeneralV2withdraw @entity {
@@ -397,7 +397,7 @@ type UniCurvePipetoggleContractActive @entity {
 type UniCurvePipetransferOwnership @entity {
   id: ID!
   timestamp: BigInt! # uint256
-  newOwner: Bytes! # address
+  newOwner: Bytes # address
 }
 
 type UniCurvePipewithdraw @entity {
@@ -412,7 +412,7 @@ type UniV1V2PipeV1toV2Pipe @entity {
   uniV1Amount: BigInt! # uint256
   toTokenAddress: Bytes! # address
   toWhomToIssue: Bytes! # address
-  value0: BigInt! # uint256
+  value0: BigInt # uint256
 }
 
 type UniV1V2Pipedestruct @entity {
@@ -467,7 +467,7 @@ type UniswapV2ZapInGeneralV2ZapIn @entity {
   _ToUnipoolToken1: Bytes! # address
   _amount: BigInt! # uint256
   _minPoolTokens: BigInt! # uint256
-  value0: BigInt! # uint256
+  value0: BigInt # uint256
 }
 
 type UniswapV2ZapInGeneralV2inCaseTokengetsStuck @entity {
@@ -607,7 +607,7 @@ type BalancerUniswapV2PipeV11PipeBalancerUniV2 @entity {
   _toUniswapPoolAddress: Bytes! # address
   _toWhomToIssue: Bytes! # address
   _minUniV2Tokens: BigInt! # uint256
-  value0: BigInt! # uint256
+  value0: BigInt # uint256
 }
 
 type BalancerUniswapV2PipeV11PipeUniV2Balancer @entity {
@@ -618,7 +618,7 @@ type BalancerUniswapV2PipeV11PipeUniV2Balancer @entity {
   _ToBalancerPoolAddress: Bytes! # address
   _toWhomToIssue: Bytes! # address
   _minBPTokens: BigInt! # uint256
-  value0: BigInt! # uint256
+  value0: BigInt # uint256
 }
 
 type BalancerUniswapV2PipeV11inCaseTokengetsStuck @entity {
@@ -664,7 +664,7 @@ type BalancerZapInGeneralV25EasyZapIn @entity {
   _ToBalancerPoolAddress: Bytes! # address
   _amount: BigInt! # uint256
   _minPoolTokens: BigInt! # uint256
-  tokensBought: BigInt! # uint256
+  tokensBought: BigInt # uint256
 }
 
 type BalancerZapInGeneralV25token2Token @entity {
@@ -673,7 +673,7 @@ type BalancerZapInGeneralV25token2Token @entity {
   _FromTokenContractAddress: Bytes! # address
   _ToTokenContractAddress: Bytes! # address
   tokens2Trade: BigInt! # uint256
-  tokenBought: BigInt! # uint256
+  tokenBought: BigInt # uint256
 }
 
 type BalancerZapInGeneralV25inCaseTokengetsStuck @entity {
@@ -716,7 +716,7 @@ type UnipoolBridgeZapV1ZapBridge @entity {
   _FromTokenContractAddress: Bytes! # address
   _ToTokenContractAddress: Bytes! # address
   _IncomingLP: BigInt! # uint256
-  value0: Boolean! # bool
+  value0: Boolean # bool
 }
 
 type UnipoolBridgeZapV1destruct @entity {

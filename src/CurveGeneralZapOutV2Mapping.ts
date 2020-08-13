@@ -52,7 +52,7 @@ export function handleZapOut(call: ZapOutCall): void {
   entity._IncomingCRV = call.inputs._IncomingCRV
   entity._ToTokenAddress = call.inputs._ToTokenAddress
   entity._minToTokens = call.inputs._minToTokens
-  entity.ToTokensBought = call.outputs.ToTokensBought
+  //entity.ToTokensBought = call.outputs.ToTokensBought
   entity.timestamp = call.block.timestamp
   entity.save()
 }

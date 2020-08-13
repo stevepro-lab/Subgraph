@@ -28,7 +28,7 @@ export function handleEasyZapIn(call: EasyZapInCall): void {
   entity._ToBalancerPoolAddress = call.inputs._ToBalancerPoolAddress
   entity._amount = call.inputs._amount
   entity._minPoolTokens = call.inputs._minPoolTokens
-  entity.tokensBought = call.outputs.tokensBought
+  //entity.tokensBought = call.outputs.tokensBought
   entity.timestamp = call.block.timestamp
   entity.save()
 }
